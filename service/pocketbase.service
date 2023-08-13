@@ -1,0 +1,14 @@
+[Unit]
+Description = pocketbase
+
+[Service]
+Type             = simple
+User             = root
+Group            = root
+LimitNOFILE      = 4096
+Restart          = always
+RestartSec       = 5s
+ExecStart        = /bin/bash /home/pocketbase/backend/start.sh
+
+[Install]
+WantedBy         = multi-user.target
