@@ -3,4 +3,5 @@ backend/hackathon-backend
 backend/pb_data
 backend/*.log
 nginx/certs
+nginx/conf.d/
 
